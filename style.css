@@ -1,0 +1,705 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+*{
+padding: 0;
+margin:0 ;
+box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+ font-family:"Quicksand", sans-serif; 
+}
+
+ul{
+
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    max-width: 1100px;
+    margin: auto;
+}
+ .container{
+    max-width: 1100px;
+    margin: auto;
+
+ }
+/*utility classes*/
+.primary-text{
+    color:#6b705c;
+}
+/*header start*/
+
+header{
+    height: 100vh;
+    background: url('healthy-lifestyle-plan-product-image (1).jpg try.jpg') center center/cover  no-repeat;
+    position: relative;
+}
+
+
+#navbar{
+ display:flex;
+ justify-content: space-between;
+ align-items: center;
+}
+
+#navbar img {
+width: 50px;
+margin-left: 50px;
+
+}
+#navbar ul{
+ display: flex;
+ margin-right: 100px;
+
+}
+#navbar ul li a{
+padding: 15px 20px;
+color: #fff;
+font-weight: 700;
+}
+#navbar ul li a:hover{
+    border-bottom: 2px solid  #6b705c ;
+}
+header .content {
+    display: flex ; 
+    flex-direction: column;
+    justify-content: center;
+    align-items:center ;
+    height: 93vh;
+ }
+ header .content h1 {
+
+    font-size: 40px;
+    color: #fff;
+ }
+ header .content p {
+margin: 20px 0 40px;
+color: #fff;
+ }
+ header::before {
+    content:"";
+    position: absolute;
+    top:0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    background:rgb(0,0,0,0.3);
+ }
+ header *{
+z-index:10;
+ }
+/*header end*/
+
+/*calculater  start*/
+#calc{
+  background: url( 'photo222-1490818387583-1baba5e638af.jpg')center center/cover  no-repeat;
+  position: relative; ;
+}
+.box {
+  width: 500px;
+  background: #fafafa;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 2px 2px 20px 5px rgba(0,0,0,0.5);
+
+}
+
+
+h1 {
+  color: rgb(0, 0, 0, 0.7);
+  font-weight: bold;
+  font-size: 36px;
+  padding: 30px 0;
+  
+}
+
+
+  
+  .content {
+      padding: 0 30px;
+      
+  }
+  
+  .input {
+      background: #fff;
+      box-shadow: 0px 0px 95px -30px rgba(0, 0, 0, 0.15);
+      border-radius: 12px;
+      padding: 20px 0;
+      margin-bottom: 20px;
+  }
+
+  
+  .input label {
+      display: block;
+      font-size: 18px;
+      font-weight: 600;
+      color: #000;
+      margin-bottom: 20px;
+  }
+  .input input {
+      outline: none;
+      border: none;
+      border-bottom: 1px solid #4f7df9;
+      width: 50%;
+      text-align: center;
+      font-size: 28px;
+      font-family: "Nunito", sans-serif;
+  }
+
+
+  
+  .inputW {
+      background: #fff;
+      box-shadow: 0px 0px 95px -30px rgba(0, 0, 0, 0.15);
+      border-radius: 12px;
+      padding: 10px 0;
+      margin-bottom: 20px;
+  }
+
+
+  .inputW label {
+      display: block;
+      font-size: 18px;
+      font-weight: 600;
+      color: #000;
+      margin-bottom: 20px;
+  }
+ .inputW input {
+      outline: none;
+      border: none;
+      border-bottom: 1px solid #4f7df9;
+      width: 50%;
+      text-align: center;
+      font-size: 28px;
+      font-family: "Nunito", sans-serif;
+  }
+
+  .inputH {
+      background: #fff;
+      box-shadow: 0px 0px 95px -30px rgba(0, 0, 0, 0.15);
+      border-radius: 12px;
+      padding: 10px 0;
+      margin-bottom: 20px;
+      margin-right: 20px;
+  }
+
+
+  .inputH label {
+      display: block;
+      font-size: 18px;
+      font-weight: 600;
+      color: #000;
+      margin-bottom: 20px;
+  }
+ .inputH input {
+      outline: none;
+      border: none;
+      border-bottom: 1px solid #4f7df9;
+      width: 50%;
+      text-align: center;
+      font-size: 28px;
+      font-family: "Nunito", sans-serif;
+  }
+
+
+button.calculate {
+  cursor: pointer;
+  font-family: "Nunito", sans-serif;
+  color: #fff;
+  background: #6b705c;
+  font-size: 16px;
+  border-radius: 7px;
+  padding: 12px 0;
+  width: 100%;
+  outline: none;
+  border: none;
+  transition: all 0.5s;
+}
+button.calculate:hover {
+  background:#6b705c; 
+}
+
+
+
+.result {
+  padding: 10px 20px;
+}
+.result p {
+  font-weight: 600;
+  font-size: 22px;
+  color: #000;
+  margin-bottom: 15px;
+}
+.result #result {
+  font-size: 36px;
+  font-weight: 900;
+  color:#6b705c;
+  background-color: #eaeaea;
+  display: inline-block;
+  padding: 7px 20px;
+  border-radius: 55px;
+  margin-bottom: 25px;
+}
+#comment {
+  color:#6b705c;
+  font-weight: 800;
+}
+
+.comment {
+  display: none;
+  border: dashed 1px;
+  border-radius: 7px;
+  padding: 5px;
+}
+
+.footer {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 10px 15px
+}
+
+.footer-text {
+  text-decoration: none;
+  color: rgba(40, 40, 40, 0.8);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 200;
+  font-size: 14px;
+  transition: all 0.5;
+}
+
+.footer-text:hover {
+  color: rgba(40, 40, 40, 1);
+}
+
+.gender {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  background: #fff;
+  box-shadow: 0px 0px 95px -30px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+  padding: 20px 0;
+  margin-bottom: 20px;
+}
+
+/* Style for Radio */
+.gender .container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  /* margin-bottom: 12px; */
+  margin-top: 7px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.gender .container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.gender .container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.gender .container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.gender .container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.gender .container .checkmark:after {
+     top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
+/* END Style for Radio */
+
+.containerHW {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+
+
+
+/* The Modal (background) */
+.modal {
+display: none; /* Hidden by default */
+position: fixed; /* Stay in place */
+z-index: 1; /* Sit on top */
+padding-top: 100px; /* Location of the box */
+left: 0;
+top: 0;
+width: 100%; /* Full width */
+height: 100%; /* Full height */
+overflow: auto; /* Enable scroll if needed */
+background-color: rgb(0,0,0); /* Fallback color */
+background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+padding-top: 300px;
+
+}
+
+/* Modal Content */
+.modal-content {
+background-color: #fefefe;
+margin: auto;
+padding: 20px;
+border: 1px solid #888;
+width: 600px;
+border-radius: 10px;
+box-shadow: #393c76 -1px 2px 2px 1px;
+}
+
+#modalText {
+padding-top: 8px;
+padding-right: 5px;
+font-size: 18px;
+font-family: 'Poppins', sans-serif;
+color: rgb(24, 23, 23);
+}
+
+.modal-wrong {
+border: 2px solid red;
+}
+
+.modal-correct {
+border: 2px solid green;
+}
+
+/* The Close Button */
+.close {
+color: #aaaaaa;
+float: right;
+font-size: 28px;
+font-weight: bold;
+cursor: pointer;
+transition: all 0.3s;
+}
+
+.close:hover {
+color: #d41111; 
+}
+
+
+
+
+
+.linkDownload {
+  position: fixed;
+  background-color: #d12322;
+  margin: 20px;
+  padding: 10px 10px;
+  left: -0px;
+  border-radius: 5px;
+  bottom: -0px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all 0.43s ease-in-out;
+
+
+}
+
+
+.linkDownload i {
+  padding-left: 7px;
+}
+
+.linkDownload:hover {
+  text-decoration: none;
+  background-color: black;
+}
+
+
+@media (max-width: 700px){
+
+
+  .box {
+      width: 380px;
+  }
+
+
+
+  
+  .input label {
+
+      font-size: 18px;
+  }
+
+  .inputH label, .inputW label {
+      font-size: 14px;
+  }
+
+
+  .input input, .inputH input, .inputW input{
+      font-size: 24px;
+  }
+
+
+  .modal-content {
+
+    width: 380px;
+  }
+
+
+
+}
+
+/* calculater end*/
+
+/*calories start*/
+
+#calories {
+    height:80vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+}
+#calories.title{
+    text-align: center;
+    margin-bottom: 4rem;
+}
+#calories h2{ text-align: center;
+
+    font-size: 40px;
+    color:#6b705c;
+    margin-bottom:20px ;
+}
+#calories.calories-content{
+    display:flex;
+    justify-content: space-between; 
+    color:(#c9c9bc);
+
+}
+
+#calories{
+    height: 100vh;
+    background: url('calories back..avif') center center/cover  no-repeat;
+    position: relative;
+}
+
+/*calories end*/
+
+/*diet plans start*/
+#diet {
+    height: 600vh;
+    background: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  #diet .title,
+  #offers .title,
+  #menu .title 
+  {
+    
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+  
+  #diet h2,
+  #offers h2,
+  #menu h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  #diet h2 {
+    color: #383848;
+  }
+
+  
+  #diet h1 {
+    color: #383848;
+     margin-left: 6rem;
+
+  }
+  
+  
+  #diet .title p {
+    font-weight: 700;
+    font-size: 14px;
+    color: #9a9a9a;
+ 
+
+  }
+  
+  #diet .diet-content {
+    display: flex;
+    justify-content: space-between;
+    background:#f4f4f4 ;
+     margin-left: 7rem;
+
+  }
+  
+  #diet .diet-content p {
+    margin-right: 0rem;
+    margin-left: 7rem;
+    line-height: 1.6;
+    color: #6b705c;
+    font-weight: 700;
+    font-size:large;
+  }
+  /* diet plans End */
+
+  /*About section*/
+
+.about{
+	padding:80px 0px;
+	background-color: #6b705c;
+}
+
+
+a{
+  text-decoration: none;
+  color: #c9c9bc;
+}
+.about .content{ 
+ -webkit-display: flex;
+ display: flex;
+}
+.about .content .box{
+	flex:0 0 33.33%;
+	max-width: 33.33%;
+	padding:15px;
+}
+.about .content .box .inner{
+	background-color:#222222;
+}
+.about .content .box:nth-child(2) .inner{
+	background-color:#6b705c ;
+}
+.about .content .box .inner .img img{
+	width: 100%;
+}
+.about .content .box .inner .text{
+	padding:30px;
+}
+
+.about .content .box .inner .text h4{
+  font-size: 20px;
+  margin:0;
+  padding: 0px 0px 15px;
+  font-weight: 500;
+  color:#ffffff;
+ text-transform: capitalize;
+  text-align: center;
+}
+.about .content .box .inner .text p{
+	font-size: 15px;
+	line-height:20px;
+	color:#ffffff;
+	text-align: center;
+	margin:0;
+	font-family: 'Open Sans', sans-serif;
+}
+
+
+ /*About section end*/
+
+
+
+/* habits start*/
+
+  #habits {
+    height: 250vh;
+    background:#f4f4f4; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  #habits h2 {
+    color: #383848;
+     margin-left: 0rem;
+  }
+
+  
+#habits h1{ text-align: center;
+
+    font-size: 40px;
+    color:#6b705c;
+    margin-bottom:20px ;
+}
+#habits .title p {
+  font-weight: 700;
+  font-size: 14px;
+  color: #9a9a9a;
+
+
+}
+ #habits .habits-content p {
+  margin-right: 0rem;
+  margin-left: 7rem;
+  line-height: 1.6;
+  color: #6b705c;
+  font-weight: 700;
+  font-size:large;
+}
+
+/* habits end*/
+
+
+/*footer start*/
+#footer{
+
+  background: #383848;
+  text-align: center ;
+  color: #fff;
+  padding: 15px 0;
+  font-size: 14px;
+}  
+#footer a{
+  color:#fff ;
+} 
+/*footer end*/
+
+
